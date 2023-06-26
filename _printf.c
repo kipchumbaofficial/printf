@@ -28,8 +28,11 @@ int _printf(const char *format, ...)
 					break;
 				case 's':
 					S = va_arg(orodha, const char*);
-					putChar(*S);
-					S++;
+					while (*S != '\0')
+					{
+						putChar(*S);
+						S++;
+					}
 					jumla = _stRlen_(S);
 					break;
 				case '%':
