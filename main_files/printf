@@ -1,10 +1,11 @@
 #include "main.h"
 #include <stdio.h>
+#include <stddef.h>
 
 int main(void)
 {
 	char c = 'a';
-	char *str = "mike";
+	char *str = NULL;
 
 	_printf("%c", c);
 	_printf("%s", str);

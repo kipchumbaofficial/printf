@@ -28,6 +28,10 @@ int _printf(const char *format, ...)
 					break;
 				case 's':
 					S = va_arg(orodha, const char*);
+					if (S == NULL)
+					{
+						return (0);
+					}
 					while (*S != '\0')
 					{
 						putChar(*S);
