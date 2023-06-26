@@ -29,6 +29,7 @@ int _printf(const char *format, ...)
 				case 's':
 					S = va_arg(orodha, const char*);
 					putChar(*S);
+					S++;
 					jumla = _stRlen_(S);
 					break;
 				case '%':
