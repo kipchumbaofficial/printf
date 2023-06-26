@@ -11,7 +11,6 @@ int _printf(const char *format, ...)
 {
 	va_list orodha;
 	int jumla = 0, weka;
-	const char *S;
 
 	va_start(orodha, format);
 
@@ -20,7 +19,7 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			switch(*format)
+			switch (*format)
 			{
 				case 'c':
 					weka = va_arg(orodha, int);
@@ -28,17 +27,7 @@ int _printf(const char *format, ...)
 					jumla++;
 					break;
 				case 's':
-					S = va_arg(orodha, const char*);
-					if (S == NULL)
-					{
-						S = "(null)";
-					}
-					while (*S != '\0')
-					{
-						putChar(*S);
-						S++;
-						jumla++;
-					}
+					jumla = printString(orodha);
 					break;
 				case '%':
 					putChar('%');
