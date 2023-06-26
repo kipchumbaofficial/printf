@@ -14,6 +14,6 @@ int main(void)
 	n = _printf("%s\n", s);
 	i =  _printf("%c\n", c);
 	y = printf("%c\n", c);
-	printf("%d %d\n %d %d", i, y, n, m);
+	printf("%d\n %d\n %d\n %d\n", i, y, n, m);
 	return (0);
 }
