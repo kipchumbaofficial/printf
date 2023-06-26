@@ -18,8 +18,8 @@ int printString(va_list orodha)
 	while (*sT != '\0')
 	{
 		putChar(*sT);
-		jumla++;
 		sT++;
+		jumla++;
 	}
 	return (jumla);
 }
