@@ -5,6 +5,6 @@
 #include <unistd.h>
 int putChar(char c);
 int _printf(const char *format, ...);
-int _stRlen_(char *string);
+int _stRlen_(const char *string);
 
 #endif
