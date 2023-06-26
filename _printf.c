@@ -28,9 +28,9 @@ int _printf(const char *format, ...)
 					break;
 				case 's':
 					s = va_arg(orodha, const char*);
-					for (i = 0; str[i] != '\0'; i++)
+					for (i = 0; s[i] != '\0'; i++)
 					{
-						putchar(str[i]);
+						putchar(s[i]);
 					}
 					jumla = i;
 					break;
