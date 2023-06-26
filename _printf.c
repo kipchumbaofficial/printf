@@ -10,8 +10,8 @@
 int _printf(const char *format, ...)
 {
 	va_list orodha;
-	int jumla = 0, weka;
-
+	int jumla = 0, weka, i;
+	const char *s;
 	va_start(orodha, format);
 
 	while (*format != '\0')
@@ -27,7 +27,12 @@ int _printf(const char *format, ...)
 					jumla++;
 					break;
 				case 's':
-					jumla = printString(orodha);
+					s = va_arg(orodha, const char*);
+					for (i = 0; str[i] != '\0'; i++)
+					{
+						putchar(str[i]);
+					}
+					jumla = i;
 					break;
 				case '%':
 					putChar('%');
