@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 					S = va_arg(orodha, const char*);
 					if (S == NULL)
 					{
-						return (0);
+						S = "(null)";
 					}
 					while (*S != '\0')
 					{
