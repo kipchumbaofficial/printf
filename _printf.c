@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _printf - produces output according to format.
  * @format: character string
@@ -36,8 +37,8 @@ int _printf(const char *format, ...)
 					{
 						putChar(*S);
 						S++;
+						jumla++;
 					}
-					jumla = _stRlen_(S);
 					break;
 				case '%':
 					putChar('%');
