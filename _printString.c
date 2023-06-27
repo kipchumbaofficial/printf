@@ -7,10 +7,10 @@
  */
 int printString(va_list orodha)
 {
-	const char *string;
+	char *string;
 	int i;
 
-	string = va_arg(orodha, const char *);
+	string = va_arg(orodha, char *);
 	if (string == NULL)
 	{
 		string = "(null)";

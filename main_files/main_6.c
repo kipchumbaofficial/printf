@@ -7,13 +7,10 @@
  */
 int main(void)
 {
-	int i = 0, y = 0, n = 0, m = 0;
-	char c = 'a';
+	int n = 0, m = 0;
 	char *s = "abdcd";
 	m = printf("%s\n", s);
-	n = _printf("%s\n", s);
-	i =  _printf("%c\n", c);
-	y = printf("%c\n", c);
-	printf("%d\n %d\n %d\n %d\n", i, y, n, m);
+	n = _printf("%s%d\n", s);
+	printf("%d\n%d\n", m, n);
 	return (0);
 }
