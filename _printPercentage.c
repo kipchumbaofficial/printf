@@ -7,7 +7,7 @@
  * Return: number of characters
  */
 
-int printPercent(va_list orodha)
+int printPercent(__attribute__((unused))va_list orodha)
 {
 	int i = 0;
 
