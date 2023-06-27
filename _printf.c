@@ -11,7 +11,8 @@ int _printf(const char *format, ...)
 {
 	va_list orodha;
 	int jumla = 0, len = 0;
-	if(format == NULL)
+
+	if (format == NULL)
 		return (-1);
 
 	va_start(orodha, format);

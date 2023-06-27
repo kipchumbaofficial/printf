@@ -4,8 +4,10 @@
 
 int main(void)
 {
+	int f = 0, i = 0;
 
-	_printf("%c",'a');
-	printf("%c", 'a');
+	f = _printf("%c",'a');
+	i = printf("%c", 'a');
+	printf("%d%d", i, f);
 	return (0);
 }

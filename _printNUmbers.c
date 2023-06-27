@@ -25,11 +25,11 @@ int  printSigned(va_list orodha)
 	}
 	while (x / gawa > 9)
 		gawa *= 10;
-	while(gawa != 0)
+	while (gawa != 0)
 	{
 		namba += putChar('0' + x / gawa);
 		x %= gawa;
 		gawa /= 10;
 	}
-	return(namba);
+	return (namba);
 }
