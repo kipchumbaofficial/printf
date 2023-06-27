@@ -8,16 +8,18 @@
 int printString(va_list orodha)
 {
 	char *string;
-	int i;
+	int i = 0;
 
 	string = va_arg(orodha, char *);
 	if (string == NULL)
 	{
 		string = "(null)";
 	}
-	for (i = 0; string[i] != '\0'; i++)
+	while (*string != '\0')
 	{
-		putChar(string[i]);
+		putChar(*string);
+		string++;
+		i++;
 	}
-	return (i + 1);
+	return (i);
 }
