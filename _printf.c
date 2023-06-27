@@ -10,7 +10,7 @@
 int _printf(const char *format, ...)
 {
 	va_list orodha;
-	int jumla = 0, weka, len = 0, specifier_count = 0;
+	int jumla = 0, weka, len = 0;
 
 	va_start(orodha, format);
 	while (*format != '\0')
@@ -18,7 +18,6 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			specifier_count++;
 			switch (*format)
 			{
 				case 'c':
@@ -49,9 +48,5 @@ int _printf(const char *format, ...)
 
 	}
 	va_end(orodha);
-	if (specifier_count != jumla)
-	{
-		putchar('e');
-	}
 	return (jumla);
 }
