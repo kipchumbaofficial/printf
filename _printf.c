@@ -10,7 +10,7 @@
 int _printf(const char *format, ...)
 {
 	va_list orodha;
-	int jumla = 0, weka, len = 0;
+	int jumla = 0, len = 0;
 	if(format == NULL)
 		return (-1);
 
@@ -23,9 +23,7 @@ int _printf(const char *format, ...)
 			switch (*format)
 			{
 				case 'c':
-					weka = va_arg(orodha, int);
-					putChar(weka);
-					jumla++;
+					jumla += printCase(orodha);
 					break;
 				case '%':
 					putChar('%');
@@ -53,7 +51,6 @@ int _printf(const char *format, ...)
 			jumla++;
 		}
 		format++;
-
 	}
 	va_end(orodha);
 	return (jumla);
