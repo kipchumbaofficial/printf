@@ -14,7 +14,6 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
-
 	va_start(orodha, format);
 	while (*format != '\0')
 	{
@@ -44,10 +43,8 @@ int _printf(const char *format, ...)
 			}
 		}
 		else
-		{
 			putChar(*format);
 			jumla++;
-		}
 		format++;
 	}
 	va_end(orodha);
