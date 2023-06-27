@@ -33,6 +33,12 @@ int _printf(const char *format, ...)
 				case 's':
 					jumla = printString(orodha);
 					break;
+				case 'i':
+					jumla += printSigned(orodha);
+					break;
+				case 'd':
+					jumla += printSigned(orodha);
+					break;
 				default:
 					putChar('%');
 					putChar(*format);
