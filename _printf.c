@@ -10,10 +10,9 @@
 int _printf(const char *format, ...)
 {
 	va_list orodha;
-	int jumla = 0, weka;
+	int jumla = 0, weka, len = 0;
 
 	va_start(orodha, format);
-
 	while (*format != '\0')
 	{
 		if (*format == '%')
@@ -31,8 +30,8 @@ int _printf(const char *format, ...)
 					jumla++;
 					break;
 				case 's':
-					jumla = printString(orodha);
-					jumla += 1;
+					len = printString(orodha);
+					jumla += len;
 					break;
 				default:
 					putChar('%');

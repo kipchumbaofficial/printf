@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * printString - Prints String
  * @orodha: String arguments
@@ -15,11 +16,11 @@ int printString(va_list orodha)
 	{
 		string = "(null)";
 	}
+	i = strlen(string);
 	while (*string != '\0')
 	{
 		putChar(*string);
 		string++;
-		i++;
 	}
 	return (i);
 }
