@@ -19,5 +19,5 @@ int printString(va_list orodha)
 	{
 		putChar(string[i]);
 	}
-	return (i);
+	return (i + 1);
 }
