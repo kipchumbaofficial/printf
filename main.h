@@ -12,5 +12,6 @@ int printString(va_list orodha);
 int  printSigned(va_list orodha);
 int printCase(va_list orodha);
 int printPercent(va_list orodha);
+void _printDEF(__attribute__((unused))va_list orodha, const char *format);
 
 #endif

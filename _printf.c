@@ -39,8 +39,7 @@ int _printf(const char *format, ...)
 					jumla += printSigned(orodha);
 					break;
 				default:
-					putChar('%');
-					putChar(*format);
+					_printDEF(orodha, format);
 					jumla += 2;
 			}
 		}
