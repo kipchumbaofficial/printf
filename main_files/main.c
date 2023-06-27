@@ -4,11 +4,8 @@
 
 int main(void)
 {
-	char c = 'a';
-	char *str = NULL;
 
-	_printf("%c", c);
-	_printf("%s", str);
-	_printf("%%");
+	_printf(NULL);
+	printf(NULL);
 	return (0);
 }

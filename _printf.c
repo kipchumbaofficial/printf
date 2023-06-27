@@ -11,6 +11,8 @@ int _printf(const char *format, ...)
 {
 	va_list orodha;
 	int jumla = 0, weka, len = 0;
+	if(format == NULL)
+		return (-1);
 
 	va_start(orodha, format);
 	while (*format != '\0')
