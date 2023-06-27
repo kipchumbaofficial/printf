@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * _printf - produces output according to format.
  * @format: character string
@@ -43,8 +42,10 @@ int _printf(const char *format, ...)
 			}
 		}
 		else
+		{
 			putChar(*format);
 			jumla++;
+		}
 		format++;
 	}
 	va_end(orodha);

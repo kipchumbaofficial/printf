@@ -4,7 +4,11 @@
 
 int main(void)
 {
-	_printf("%b");
-	printf("%b");
+	int i = 0, j = 0;
+
+	j = _printf("kirimi");
+	i = printf("kirimi");
+	_printf(NULL);
+	_printf("%d%d", i, j);
 	return (0);
 }
