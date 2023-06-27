@@ -27,8 +27,7 @@ int _printf(const char *format, ...)
 					jumla += printCase(orodha);
 					break;
 				case '%':
-					putChar('%');
-					jumla++;
+					jumla += printPercent(orodha);
 					break;
 				case 's':
 					jumla += printString(orodha);

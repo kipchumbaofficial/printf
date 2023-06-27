@@ -11,5 +11,6 @@ int _stRlen_(const char *string);
 int printString(va_list orodha);
 int  printSigned(va_list orodha);
 int printCase(va_list orodha);
+int printPercent(va_list orodha);
 
 #endif
