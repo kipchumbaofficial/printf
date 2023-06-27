@@ -10,7 +10,7 @@
 int _printf(const char *format, ...)
 {
 	va_list orodha;
-	int jumla = 0, len = 0;
+	int jumla = 0;
 
 	if (format == NULL)
 		return (-1);
@@ -31,8 +31,7 @@ int _printf(const char *format, ...)
 					jumla++;
 					break;
 				case 's':
-					len = printString(orodha);
-					jumla += len;
+					jumla += printString(orodha);
 					break;
 				case 'i':
 					jumla += printSigned(orodha);
