@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * printCase - prints characters
  * @orodha : String argument
@@ -9,9 +9,9 @@ include "main.h"
 int printCase(va_list orodha)
 {
 	int i = 0;
-	char *character;
+	char character;
 
-	character = va_arg(orodha, char*);
+	character = va_arg(orodha, int);
 	i = putChar(character);
 	return (i);
 }
