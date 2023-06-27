@@ -30,6 +30,9 @@ int _printf(const char *format, ...)
 					putChar('%');
 					jumla++;
 					break;
+				case 's':
+					jumla = printString(orodha);
+					break;
 				default:
 					putChar('%');
 					putChar(*format);
