@@ -21,6 +21,9 @@ int _printf(const char *format, ...)
 			format++;
 			switch (*format)
 			{
+				case 'b':
+					jumla += printBinary(orodha);
+					break;
 				case 'c':
 					jumla += printCase(orodha);
 					break;

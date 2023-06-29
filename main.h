@@ -15,4 +15,5 @@ int printPercent(va_list orodha);
 void _printDEF(__attribute__((unused))va_list orodha, const char *format);
 int _printExact(__attribute__((unused))va_list orodha, const char *format);
 int _formatChecker(const char *format);
+int printBinary(va_list orodha);
 #endif

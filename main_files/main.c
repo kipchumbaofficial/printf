@@ -1,14 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 #include <stddef.h>
+#include <limits.h>
 
 int main(void)
 {
-	int i = 0, j = 0;
+	int j = 0;
 
-	j = _printf("kirimi");
-	i = printf("kirimi");
-	_printf(NULL);
-	_printf("%d%d", i, j);
+	j = _printf("%b\n", INT_MAX);
+	_printf("%d\n", j);
 	return (0);
 }
