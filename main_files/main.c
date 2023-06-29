@@ -7,7 +7,7 @@ int main(void)
 {
 	int j = 0;
 
-	j = _printf("%b\n", INT_MAX);
+	j = _printf("%b\n", UINT_MAX);
 	_printf("%d\n", j);
 	return (0);
 }
